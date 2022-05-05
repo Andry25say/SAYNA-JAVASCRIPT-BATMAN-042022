@@ -19,24 +19,39 @@ box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 15% 0;
 }
 nav{
     border: 1px solid #c4c4c4;
+    margin-top: -16%;
 }
+
 .bio{
     border: 1px solid #c4c4c4 ;
     border-bottom: none;
+    padding: 20% 0;
 }
-.batocine,.cardcine,.nemesis,.contact,.citationslide{
+.bio button{
+    background-color:#ffffff42;
+    width: 220px;
+    border-radius: 0;
+}
+.batocine,.nemesis,.contact,.citationslide{
     border: 1px solid #c4c4c4 ;
     border-bottom: none;
     border-top:none;
 }
+.batocine{
+    margin-top: -220px;
+}
+.batocine p{
+    text-align: justify;
+}
 .fondNoir{
     background-color: #000000;
 }
-.cardcine{
-    width:304px;
+.cardcine .card{
+    width:250px;
 }
 .cardnemesis{
     width:302px;
@@ -71,8 +86,20 @@ nav{
     background-color: transparent;
     border: 1px solid green;
 }
+form{
+    margin-left: 25%;
+}
+.contact .titreh{
+    margin-left: 25%;
+    padding-top: 5%;
+}
+.titreh2{
+    margin-left: -3%;
+}
 .confirm button{
     background-color: #b11313;
+    margin-bottom: 2%;
+    margin-left: 25%;
 }
 .citation{
     padding: 150px;
