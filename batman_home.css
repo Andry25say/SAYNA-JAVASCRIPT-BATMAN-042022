@@ -1,0 +1,88 @@
+html,body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+    --jaune-fonce:#ffff00;
+    --jaune-sombre:#f8f184;
+    --bleu-sombre:#19587d;
+    --rouge-sang:#b11313;
+    --black-color:#0d0e09;
+    --noire-color:#000000;
+    --blanc-color:#ffffff;
+    --beige-color:#c4c4c4;
+
+}
+.fondBatman{
+    background-image: url("../Assets/Illustrations/Home/bathome1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    border: 1px solid #c4c4c4;
+}
+.bio{
+    border: 1px solid #c4c4c4 ;
+    border-bottom: none;
+}
+.batocine,.cardcine,.nemesis,.contact,.citationslide{
+    border: 1px solid #c4c4c4 ;
+    border-bottom: none;
+    border-top:none;
+}
+.fondNoir{
+    background-color: #000000;
+}
+.cardcine{
+    width:304px;
+}
+.cardnemesis{
+    width:302px;
+}
+.cardhorizontal{
+    max-width: 250px;
+    max-height: 200px;
+}
+.cardhorizontal img{
+    max-height: 200px;
+}
+.cardhorizontal .card-body{
+    background-color: var(--beige-color);
+}
+.cardhorizontal .card-text, .cardhorizontal h5{
+    font-size: x-small;
+}
+.fondGris{
+    background-color: #373b39;
+}
+
+.mail input, .selection,.news input,.mess input{
+    background-color:transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-radius: 0px;
+    border-bottom: 1px solid grey;
+    width:500px;
+}
+.News .btn{
+    background-color: transparent;
+    border: 1px solid green;
+}
+.confirm button{
+    background-color: #b11313;
+}
+.citation{
+    padding: 150px;
+}
+.bross{
+   padding: 0 15%;
+}
+.mediaSocial img{
+    width: 50px;
+}
+.mediaSocial{
+    justify-content: center;
+}
