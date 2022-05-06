@@ -12,6 +12,8 @@ box-sizing: border-box;
     --noire-color:#000000;
     --blanc-color:#ffffff;
     --beige-color:#c4c4c4;
+    --beige-gris:#eddebf;
+    --rouge-foncee:#890008;
 
 }
 .fondBatman{
@@ -21,11 +23,36 @@ box-sizing: border-box;
     background-size: cover;
     padding: 15% 0;
 }
+
 nav{
-    border: 1px solid #c4c4c4;
     margin-top: -16%;
+    border: 1px solid #c4c4c4;
+}
+nav li {
+    text-decoration: underline;
+}
+#flechegauche{
+    position:relative;
+    right: 500px;
+    top: 100px;
+}
+#flechedroite{
+    position:relative;
+    left: 200px;
+    top: 100px;
 }
 
+.haubasfleche{
+    position: absolute;
+    top: 200px;
+    left:1145px;
+}
+.fless img{
+    width: 95px;
+}
+.mediafleche{
+    margin-left: 35px;
+}
 .bio{
     border: 1px solid #c4c4c4 ;
     border-bottom: none;
@@ -36,7 +63,14 @@ nav{
     width: 220px;
     border-radius: 0;
 }
-.batocine,.nemesis,.contact,.citationslide{
+.biofils button:hover{
+    background-image:linear-gradient(to right ,#ddd7cb,#f33d49);
+}
+.haubasfleche .fless:hover{
+    background-color: #ffff00;
+}
+
+.batocine,.nemesis,.contact,.citationslide,.bordure,.video{
     border: 1px solid #c4c4c4 ;
     border-bottom: none;
     border-top:none;
@@ -49,28 +83,66 @@ nav{
 }
 .fondNoir{
     background-color: #000000;
-}
-.cardcine .card{
+} 
+.card{
     width:250px;
 }
-.cardnemesis{
-    width:302px;
+.card-body{
+    display:none;
 }
+.card:hover{
+    transform: scale(1.3);
+}
+.vrainom{
+    border-radius:35px;
+    background-image:linear-gradient(to right,#ddd7cb,#f7abb0 );
+}
+
 .cardhorizontal{
-    max-width: 250px;
-    max-height: 200px;
+    position: relative;
+    margin: 20px;
+    left: 47%;
+    float: left;
+    top: 100px;
+    width: 575px;
+    height: 250px;
+    transform: translate(-50%,-50%);
+    background-color: #2b3335;
+    border-radius: 10px;
 }
-.cardhorizontal img{
-    max-height: 200px;
+.card-left{
+    position: absolute;
+    width: 200px;
+    height: 100%;
 }
-.cardhorizontal .card-body{
-    background-color: var(--beige-color);
+.card-left img{
+    position: absolute;
+    height: 100%;
 }
-.cardhorizontal .card-text, .cardhorizontal h5{
-    font-size: x-small;
+.card-right{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.card-title{
+    position: absolute;
+    color: #ffffff;
+    left: 215px;
+    top: 10px;
+    font-size: small;
+}
+.card-text{
+    position: absolute;
+    color: #ffffff;
+    left: 215px;
+    top: 95px;
+    font-size: small;
+}
+.jaune{
+    color: #ffff00;
 }
 .fondGris{
-    background-color: #373b39;
+    background-image:linear-gradient(to right,#57534a ,#092230  )
 }
 
 .mail input, .selection,.news input,.mess input{
@@ -80,12 +152,15 @@ nav{
     border-right:none;
     border-radius: 0px;
     border-bottom: 1px solid grey;
-    width:500px;
+    width:700px;
 }
 .News .btn{
     background-color: transparent;
-    border: 1px solid green;
+    border: 1px solid ;
+   
+
 }
+
 form{
     margin-left: 25%;
 }
@@ -113,3 +188,5 @@ form{
 .mediaSocial{
     justify-content: center;
 }
+
+
