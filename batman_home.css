@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600&family=Raleway&display=swap');
+
 html,body{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+
+}
+p,h2,a{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.3rem;
 }
 :root{
     --jaune-fonce:#ffff00;
@@ -30,6 +37,7 @@ nav{
 }
 nav li {
     text-decoration: underline;
+    font-size: xx-large;
 }
 #flechegauche{
     position:relative;
@@ -214,9 +222,6 @@ form{
 .mediaSocial{
     justify-content: center;
 }
-.sauve:hover{
-background-color: yellow;
-}
 #videos{
     padding-left: 11%;
 }
@@ -236,6 +241,9 @@ background-color: yellow;
     border-radius: 20px;
     border:1px solid gray ;
     margin: 0 auto;
+}
+ .over:hover{
+ filter: opacity(0.4) drop-shadow(0 0  rgb(255, 255, 0));
 }
 
 

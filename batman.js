@@ -1,3 +1,4 @@
+// HOVER DES NAV LIENS
 let lien2 = document.querySelectorAll("li")[1];
 lien2.style.textDecoration ="none";
 lien2.addEventListener("mouseover",function(){
@@ -33,8 +34,6 @@ function changement() {
 setInterval("changement()",2000)
 /*hover des cards*/
 let cardhover = document.querySelectorAll(".card");
-
-
 let affiche = document.querySelectorAll(".card-body");
 
 for(let k=0;k<cardhover.length ;k++){
@@ -154,7 +153,7 @@ confirmation.addEventListener("click",function(){
     mesage.style.display = "block";
     divcontact.style.display = "none";
 })
-/*slides automatiques*/
+/*slides automatiques CITATIONS*/
 let c = document.querySelector(".citation");
 let c1 = document.querySelector(".citation1");
 let c2 = document.querySelector(".citation2");
