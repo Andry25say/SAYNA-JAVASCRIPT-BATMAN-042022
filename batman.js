@@ -48,7 +48,101 @@ for(let k=0;k<cardhover.length ;k++){
     })
    
 }
-/*le slide card*/
+ /*le slide cardhorizontal*/
+let  carte = document.querySelector(".cardhorizontal");
+let  l = 0;
+let cartes = [
+`<div class="cardhorizontal">
+<div class="card-left">
+    <img src="Assets/Illustrations/Home/Bathome8.png" class="card-img-top img-fluid">
+</div>
 
+    <div class="card-right">
+        <h4 class="card-title">ACTION, ADVENTURE<br><br>
+            The Dark Night<br><br>
+            IMDB: <span class="jaune">9</span></h4>
+        <p class="card-text">
+          Batman aborde une phase décisive dans sa guerre contre le crime.Avec l'aide du lieutnant de police Jim Gordon et du
+          nouveau procureur Harvey Dent,il entreprend de demanteler les dernières organisations criminelles qui infestent les rues
+          de la ville.L'association s'avère efficace;mais le trio se heurte
+          bientôt à un nouveau génie du crime qui répand la terreur et le chaos dans Gotham: le Joker.
+        </p>
+</div>
+</div>`,
 
+`<div class="cardhorizontal">
+<div class="card-left">
+    <img src="Assets/Illustrations/Home/Bathome8.png" class="card-img-top img-fluid">
+</div>
+
+    <div class="card-right">
+        <h4 class="card-title">ACTION, ADVENTURE<br><br>
+            The Dark Knight Rises<br><br>
+            IMDB: <span class="jaune">8.4</span></h4>
+        <p class="card-text">
+        Huit ans passé depuis que Batman a disparu,passant du statut de héros
+        à celui de fugitif.Le"Chevalier Noir" a tout sacrifié pour le mieux.Pendant un certains temps, le mensonge
+        a l'effet escompté: la criminalité de Gotham City est presque éliminée par le commissaire James Gordon avec
+        l'unité anticrime d'Harvey Dent. Mais l'arrivée à Gotham de Bane , un terroriste masqué,
+        chamboule l'ordre établi et pousse Bruce à sortir de l'exil qu'il s'est imposé.
+        </p>
+</div>
+</div>`,
+` <div class="cardhorizontal">
+<div class="card-left">
+    <img src="Assets/Illustrations/Home/Bathome8.png" class="card-img-top img-fluid">
+</div>
+
+    <div class="card-right">
+        <h4 class="card-title">ACTION, ADVENTURE<br><br>
+            Batman Begins<br><br>
+            IMDB: <span class="jaune">8.2</span></h4>
+        <p class="card-text">
+            Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément
+            traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une
+            secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De
+            retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne
+            se lance alors dans la lutte contre le crime sous le nom de Batman.
+        </p>
+</div>
+</div>`,
+]
+let clickgauche = document.querySelector("#flechegauche");
+clickgauche.addEventListener("click",function(event){
+    event.preventDefault();
+    l++;
+    if(l<cartes.length){
+        carte.innerHTML = cartes[l];
+        bandeAnnonce.innerHTML = videotab[l];
+    }
+    else
+    {
+        l=0
+        carte.innerHTML = cartes[l];
+        bandeAnnonce.innerHTML = videotab[l];
+    }
+})
+let clickdroite = document.querySelector("#flechedroite");
+clickdroite.addEventListener("click",function(event){
+    event.preventDefault();
+    l++;
+    if(l<cartes.length ){
+        carte.innerHTML = cartes[l];
+        bandeAnnonce.innerHTML = videotab[l]
+    }
+    else
+    {
+        l=0
+        carte.innerHTML = cartes[l]
+        bandeAnnonce.innerHTML = videotab[l]
+    }
+})
+
+let bandeAnnonce = document.querySelector("#videos");
+let videotab =
+[
+`<iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+`<iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+`  <iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+]
 
