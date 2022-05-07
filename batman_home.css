@@ -38,14 +38,14 @@ nav li {
 }
 #flechedroite{
     position:relative;
-    left: 200px;
+    left: 185px;
     top: 100px;
 }
 
 .haubasfleche{
     position: absolute;
     top: 200px;
-    left:1145px;
+    left:1154px;
 }
 .fless img{
     width: 95px;
@@ -70,7 +70,7 @@ nav li {
     background-color: #ffff00;
 }
 
-.batocine,.nemesis,.contact,.citationslide,.bordure,.video{
+.batocine,.nemesis,.contact,.citationslide,.bordure,.video,.line{
     border: 1px solid #c4c4c4 ;
     border-bottom: none;
     border-top:none;
@@ -104,7 +104,7 @@ nav li {
     left: 47%;
     float: left;
     top: 100px;
-    width: 575px;
+    width: 580px;
     height: 250px;
     transform: translate(-50%,-50%);
     background-color: #2b3335;
@@ -139,13 +139,13 @@ nav li {
     font-size: small;
 }
 .multimediacard{
-    padding: 100px 0;
+    padding: 102px 0;
 }
 .jaune{
     color: #ffff00;
 }
 .fondGris{
-    background-image:linear-gradient(to right,#57534a ,#092230  )
+    background-image:linear-gradient(to right,#57534a ,#092230)
 }
 
 .mail input, .selection,.news input,.mess input{
@@ -160,6 +160,11 @@ nav li {
 .News .btn{
     background-color: transparent;
     border: 1px solid ;
+    border-radius: 0;
+    border-image: linear-gradient(to right,#57534a ,#092230 ) 1;
+}
+.News .btn:hover{
+    background-image: linear-gradient(to right,#57534a ,#092230 )
 }
 h2,h5{
     animation-duration: 6s;
@@ -184,15 +189,20 @@ form{
 .titreh2{
     margin-left: -3%;
 }
+#contacth2{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
 .confirm button{
-    background-image:linear-gradient(to right,#ddd7cb,#f32230e8 );
+    background-image:linear-gradient(to right,#cec6b7,#db404ae8 );
     margin-bottom: 2%;
     margin-left: 25%;
     width: 250px;
     height: 70px;
     border-radius: 0;
 }
-.citation{
+.citation,.citation1{
     padding: 100px;
 }
 .bross{
@@ -207,4 +217,25 @@ form{
 .sauve:hover{
 background-color: yellow;
 }
+#videos{
+    padding-left: 11%;
+}
+#videoslide{
+    width: 850px;
+    height: 450px;
+}
+#videoslide:hover{
+    box-shadow: 0 0 30px #ffffff;
+}
+
+.pop-box{
+    padding: 150px 0;
+    width: 750px;
+    height: 400px;
+    display: none;
+    border-radius: 20px;
+    border:1px solid gray ;
+    margin: 0 auto;
+}
+
 

@@ -141,8 +141,51 @@ clickdroite.addEventListener("click",function(event){
 let bandeAnnonce = document.querySelector("#videos");
 let videotab =
 [
-`<iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-`<iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-`  <iframe id="videos" width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+`<iframe id="videoslide" width="560" height="315" src="https://www.youtube.com/embed/UMgb3hQCb08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+`<iframe id="videoslide" width="560" height="315" src="https://www.youtube.com/embed/OiqPQ7L_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+`  <iframe id="videoslide" width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+]
+/*click des inputs*/
+let divcontact = document.querySelector(".contact");
+let mesage = document.querySelector(".pop-box");
+let confirmation = document.querySelector("#confirmer");
+
+confirmation.addEventListener("click",function(){
+    mesage.style.display = "block";
+    divcontact.style.display = "none";
+})
+/*slides automatiques*/
+let c = document.querySelector(".citation");
+let c1 = document.querySelector(".citation1");
+let c2 = document.querySelector(".citation2");
+let c3 = document.querySelector(".citation3");
+let c4 = document.querySelector(".citation4");
+let c5 = document.querySelector(".citation5");
+let c6 = document.querySelector(".citation6");
+let c7 = document.querySelector(".citation7");
+let c8 = document.querySelector(".citation8");
+
+let z = 0;
+let tabcitation=[
+    c1,
+    c2,
+    c3,
+    c4,
+    c5,
+    c6,
+    c7,
+    c8,
+    c
 ]
 
+function changementText() {
+    c.innerHTML=tabcitation[z].innerHTML;
+    if(z<tabcitation.length -1) {
+        z+=1
+     }
+     else{
+         z=0
+     }
+    
+} 
+setInterval("changementText()",2000)

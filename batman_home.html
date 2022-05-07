@@ -167,9 +167,8 @@
                 </div>
                 <div class="row ">
                     <div class="container">
-                    
                         <h2 class="text-light mb-5">MULTIMEDIA</h2>
-                        <div class="multimediacard">
+                        <div class="multimediacard ">
                             <a href="">
                                 <img id="flechegauche" src="Assets/Logos/Icones en + dans Home/icon_flèche_1.png" class="fleches" alt="">
                             </a>
@@ -177,7 +176,7 @@
                                 <img id="flechedroite" src="Assets/Logos/Icones en + dans Home/icon_flèche_2.png" class="fleches" alt="">
                             </a>
                             
-                            <div class="cardhorizontal">
+                            <div class="cardhorizontal ms-5">
                                     <div class="card-left">
                                         <img src="Assets/Illustrations/Home/Bathome8.png" class="card-img-top img-fluid">
                                     </div>
@@ -202,7 +201,7 @@
             <!-- --------------- VIDEO------------------->
             <div class="container video p-5">
                 <div id="videos" class="row  pb-5">
-                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  id="videoslide"  src="https://www.youtube.com/embed/jXrFsn9pcZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             
@@ -211,7 +210,7 @@
         <!-- --------------------------------CONTACT-------------------------------- -->
             <div class="container-fluid fondGris ">
                 <div class="container contact">
-                    <h2 class="text-light titreh">Prenons contact</h2>
+                    <h2 id="contacth2" class="text-light mb-5 titreh2">Prenons contact</h2>
                     <form class="text-light">
                         <div class="mb-3 mail">
                           <label for="InputEmail" class="form-label">Address</label>
@@ -219,7 +218,9 @@
                         </div>
                         <div class="mb-3 form-check">
                            <h2 class="mb-2 titreh2">Newsletter</h2> 
-                               <label class="form-check-label mb-3" for="exampleCheck1">En cochant cette case vous acceptez de recevoir l'actualité concernant les<br> aventures de batman: 
+                               <label class="form-check-label mb-3" for="exampleCheck1">
+                                   En cochant cette case vous acceptez de recevoir l'actualité concernant les<br> 
+                                aventures de batman: 
                                </label>
                                <input type="checkbox" class="form-check-input" id="exampleCheck1">  
 
@@ -228,43 +229,182 @@
                         <select class="selection text-light mb-3" name="form-select" id="selec">
                             <option value="choix">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</option>
                         </select>
-                        <div class="news">
+                        <div class="news pt-3 pb-3">
                             <input type="text" class="mb-3" placeholder="Souhaitez vous recevoir des news">
                         </div>
                         <div class="News mb-3">
-                            <button type="button" class="btn  btn-sm mx-5 text-light">Des films</button>
-                            <button type="button" class="btn  btn-sm mx-5 text-light">Des comics</button>
-                            <button type="button" class="btn  btn-sm mx-5 text-light">De tout</button>
+                            <button type="button" class="btn  btn-lg mx-5 text-light film">Des films</button>
+                            <button type="button" class="btn  btn-lg mx-5 text-light film">Des comics</button>
+                            <button type="button" class="btn  btn-lg mx-5 text-light film">De tout</button>
                         </div>
                         <div class="mess">
-                            <h2>Message</h2>
+                            <h2 class="mb-2">Message</h2>
                             <input type="message" placeholder="Laissez un commentaire pour la communauté" class="mb-5">
                         </div>
-                        <div class="confirm">
-                            <button type="button" class="btn  btn-lg text-uppercase text-light">Confirmer</button>
+                        <div class="confirm pb-5">
+                            <button id="confirmer" type="button" class="btn  btn-lg text-uppercase text-light">Confirmer</button>
                         </div> 
                     </form>
+                </div>
+              
+                <div class="container line">
+                    <div class=" pop-box">
+                        <h1 class="text-light text-uppercase text-center">Message reçu</h1>
+                    </div>
                 </div>
             </div>
     <!-- ----------- -->
         <div class="container-fluid fondNoir">
-            <div class="container citation slide text-light fondNoir">
+            <div class="container slide text-light fondNoir">
                 <div class="row citation">
                     <div class="col-2">
                         <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
                     </div>
                     <div class="col-8">
-                        <p>La seule  façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                        <p class="ms-4">La seule  façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
                         <br>
-                        <p>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                        <p class="text-center">The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                    <div class="text-center">                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">                     <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>                   </svg>                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">                     <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>                   </svg>                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">                     <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>                   </svg>                
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">   <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>        
+                    </svg>   <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">                     <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>                   
+                    </svg>  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record" viewBox="0 0 16 16">                     <path d="M8 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>                   
+                    </svg> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="#19587D" class="bi bi-record-fill" viewBox="0 0 16 16"> <path fill-rule="evenodd"> 
+
+                    </svg>  
+                    </div>
+                </div>
+                
+                <!-- ------------------------------------- -->
+                <div class="row citation1 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">Soit on meurt en héros, soit on vit assez longtemps pour se voir endosser le rôle du méchant.</p>
+                        <br>
+                        <p class="text-center">The Dark Knight : Le Chevalier Noir - Harvey Dent (2008)</p>
                     </div>
                     <div class="col-2">
                         <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
                     </div>
                 </div>
+                <!-- ------------------------------------- -->
+                <div class="row citation2 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">Le héros peut être en chacun, même en celui qui fait une chose aussi simple et rassurante que mettre un
+                            manteau sur les épaules d'un garçon et ainsi lui faire comprendre que le monde ne s'est pas écroulé.</p>
+                        <br>
+                        <p class="text-center">The Dark Knight Rises - Batman à James Gordon (2012)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- -------------------------------------- -->
+                <div class="row citation3 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">Ah ! Tu crois que l'obscurité est ton allié. Tu n'a fait qu'adopter la pénombre. Moi je suis né dedans, j'ai été
+                            façonné par elle. Je n'ai découvert la lumière qu'a l'âge d'homme, et alors, elle m'a juste paru AVEUGLANTE!</p>
+                        <br>
+                        <p class="text-center">The Dark Knight Rises - Bane à Batman (2012)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- -------------------------------------- -->
+                <div class="row citation4 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">- Je vous prépare la batmoto monsieur ?
+                            - En pleine journée Alfred ? Pas très subtile.
+                            - La Lamborghini alors... beaucoup plus subtile.</p>
+                        <br>
+                        <p class="text-center">The Dark Knight: Le Chevalier Noir - Alfred et Batman (2008)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- ------------------------------------ -->
+                <div class="row citation5 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">Freeze, t'es givré !</p>
+                        <br>
+                        <p class="text-center">Batman & Robin - Batman à Mr Freeze (1997)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- ---------------------------------- -->
+                <div class="row citation6 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">La peur est un outil. Cette lumière qui déchire le ciel, ce n'est pas qu'un appel à l'aide. C'est un
+                            avertissement.</p>
+                        <br>
+                        <p class="text-center">Batman - Batman (2022)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- -------------------------------- -->
+                <div class="row citation7 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">- Pourquoi tombons nous Bruce ?
+                            - Pour mieux apprendre à nous relever.</p>
+                        <br>
+                        <p class="text-center">Batman Begins - Thomas Wayne à Bruce Wayne 8 ans (2005)</p>
+                    </div>
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+                <!-- --------------------------------- -->
+                <div class="row citation8 d-none centre">
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_1.png" alt="">
+                    </div>
+                    <div class="col-8">
+                        <p class="ms-4">Des hommes tombent du ciel, les dieux crachent la foudre, des innoncents meurent. C'est comme cela que
+                            ça commence, monsieur. De la fureur, de la fièvre, un sentiment d'impuissance, qui rend les hommes bien...
+                            cruels.</p>
+                        <br>
+                        <p class="text-center">Batman v Superman : l'aube de la justice, Alfred à Batman (2016)</p>
+                    </div>
+                    <!-- ----------------------------- -->
+                    <div class="col-2">
+                        <img src="Assets/Logos/Icones en + dans Home/icon_guillemets_2.png" alt="">
+                    </div>
+                </div>
+
                 <div class="row bross">
                     <p class="ps-0">
-                        <img src="Assets/Logos/icon_WB.png" alt="">Ce projet respecte l'univers cinematographique des films batmans recents.Version Nolan&Snyder&Reeves
+                        <img class="me-2" src="Assets/Logos/icon_WB.png" alt="">Ce projet respecte l'univers cinematographique des films batmans recents.Version Nolan&Snyder&Reeves
                     </p>
                 </div>
                 <div class="row mediaSocial mt-2 pt-5">
@@ -277,7 +417,7 @@
                 </div>
 
             </div>
-    </div>
+            </div>
    
     <script src="batman.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
