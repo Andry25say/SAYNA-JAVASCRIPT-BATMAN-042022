@@ -190,3 +190,12 @@ function changementText() {
     
 } 
 setInterval("changementText()",2000)
+/************************************Scroller******************************/
+let element =[]
+function elementEnVue(element,scrollPercent = 100){
+    const elementTop = element.getBoundingClientRect().top;
+    return elementTop <= window.innerHeight * (scrollPercent/100)
+}
+function afficheElementEnVue(element,className){
+    element.classlist.add(className);
+}

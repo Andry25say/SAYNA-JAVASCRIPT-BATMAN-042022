@@ -259,4 +259,12 @@ form{
     top: -3px;
     left:-15px
 }
-
+@media (max-width:568px) {
+    .bio button{
+        width: 100px;
+        font-size: small;
+    }
+    p{
+        font-size: small;
+    }
+}
