@@ -6,7 +6,7 @@ padding: 0;
 box-sizing: border-box;
 
 }
-p,h2,a,{
+p,h2,a{
     font-family: 'Rajdhani', sans-serif;
     font-size: 1.3rem;
 }
