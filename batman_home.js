@@ -3,9 +3,11 @@ let lien2 = document.querySelectorAll("li")[1];
 lien2.style.textDecoration ="none";
 lien2.addEventListener("mouseover",function(){
     lien2.style.textDecoration ="underline";
+    lien2.style.fontWeight ="bold";
 })
 lien2.addEventListener("mouseout",function(){
     lien2.style.textDecoration ="none";
+    lien2.style.fontWeight ="normal";
 })
 /* hover card*/
 let slider = document.querySelector(".slider1");

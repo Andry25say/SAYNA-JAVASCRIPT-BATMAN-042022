@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600&family=Raleway&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondBatmangame{
+    background-image: url("../Assets/Illustrations/Game/batgame1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 0 15% 0;
+}
+.container{
+   border: 1px solid #eddebf;
+}
+h1,p,h2,h4,label ,.blanc{
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+}
+.haubasfleche{
+    position: fixed;
+    top: 150px;
+    left: 1150px;
+}
+.mediafleche{
+    margin-left: 40px;
+}
+#letsplay{
+    padding:15% 0 35% 5%;
+    margin-bottom: -200px;
+}
+.fondNoir{
+    background-color: #000000;
+}
+.form-check{
+    border-radius: none;
+    font-size: x-large;
+    background-color: #757575;
+}
+.form-check input[type=checkbox]{
+    border-radius: 0;   
+}
+#batgame2{
+    width: 800px;
+}
+button[type=button]{
+    border-radius: 0;
+    width: 250px;
+    background-image:linear-gradient(to right,#64615c,#521014 ) ;
+}
+.mediaSocial img{
+    width: 50px;
+}
+.bross{
+    padding: 0 15%;
+ }
+ h4{
+     padding:15px 0;
+ }

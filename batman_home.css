@@ -6,7 +6,7 @@ padding: 0;
 box-sizing: border-box;
 
 }
-p,h2,a{
+p,h2,a,{
     font-family: 'Rajdhani', sans-serif;
     font-size: 1.3rem;
 }
@@ -51,7 +51,7 @@ nav li {
 }
 
 .haubasfleche{
-    position: absolute;
+    position: fixed;
     top: 200px;
     left:1154px;
 }
@@ -70,6 +70,7 @@ nav li {
     background-color:#ffffff42;
     width: 220px;
     border-radius: 0;
+    height: 70px;
 }
 .biofils button:hover{
     background-image:linear-gradient(to right ,#ddd7cb,#f33d49);
@@ -94,6 +95,7 @@ nav li {
 } 
 .card{
     width:250px;
+    position: relative;
 }
 .card-body{
     display:none;
@@ -104,6 +106,9 @@ nav li {
 .vrainom{
     border-radius:35px;
     background-image:linear-gradient(to right,#ddd7cb,#f7abb0 );
+    padding-right: 5px;
+    position: absolute;
+    bottom: 0;
 }
 
 .cardhorizontal{
@@ -245,5 +250,13 @@ form{
  .over:hover{
  filter: opacity(0.4) drop-shadow(0 0  rgb(255, 255, 0));
 }
-
+.rond{
+    margin-top:-75px;
+    margin-bottom:55px;
+}
+.vrainom img{
+    position: relative;
+    top: -3px;
+    left:-15px
+}
 
